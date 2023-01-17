@@ -1,0 +1,31 @@
+GET http://localhost:8090/rest/test HTTP/1.1
+
+
+###
+
+POST http://localhost:8090/rest/address HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "이순신",
+    "age": 25,
+    "gender": "m",
+    "address": "서울시 강남구 역삼동"
+}
+
+
+####
+
+GET http://localhost:8090/rest/address HTTP/1.1
+
+####
+
+PUT http://localhost:8090/rest/address/83 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "이신영",
+    "age": 23,
+    "gender": "f",
+    "address": "서울시 강남구 대치동"
+}
